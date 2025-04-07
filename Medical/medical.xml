@@ -118,12 +118,6 @@
       <Price locationtype="military" multiplier="1" sold="false" />
       <Price locationtype="mine" multiplier="0.75" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
-      <RequiredSkill identifier="medical" level="65" />
-      <RequiredItem identifier="scp_firelatex" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
     <Deconstruct time="20">
       <Item identifier="scp_firelatex" outcondition="0.5" />
       <Item identifier="flashpowder" />
@@ -184,13 +178,6 @@
     </Price>
     <SuitableTreatment type="scp_presolatexinfection" suitability="50" />
     <SuitableTreatment type="burn" suitability="50" />
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
-      <RequiredSkill identifier="medical" level="70" />
-      <RequiredItem identifier="scp_replicatinglatex" />
-      <RequiredItem identifier="plastic" mincondition="0.25" />
-      <RequiredItem identifier="stabilozine" />
-      <RequiredItem identifier="flashpowder" mincondition="0.5" />
-    </Fabricate>
     <Deconstruct time="20">
       <Item identifier="scp_replicatinglatex" copycondition="true" mincondition="0.1" />
       <Item identifier="plastic" copycondition="true" mincondition="0.1" />
@@ -338,12 +325,6 @@
     <PreferredContainer secondary="toxcontainer" />
     <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="2" spawnprobability="0.05" />
     <Price baseprice="650" sold="false"></Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40">
-      <RequiredSkill identifier="medical" level="65" />
-      <RequiredItem identifier="sulphuricacid" amount="2" />
-      <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
-      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.5" />
-    </Fabricate>
     <Deconstruct time="20">
       <Item identifier="sulphuricacid" />
       <Item identifier="scp_firelatex" outcondition="0.5" />
@@ -371,13 +352,6 @@
     <PreferredContainer secondary="toxcontainer" />
     <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="1" spawnprobability="0.01" />
     <Price baseprice="650" sold="false"></Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="35">
-      <RequiredSkill identifier="medical" level="50" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="alienblood" />
-      <RequiredItem identifier="sufforin" />
-      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.5" />
-    </Fabricate>
     <Deconstruct time="20">
       <Item identifier="alienblood" />
       <Item identifier="sufforin" outcondition="0.5" />
@@ -403,13 +377,6 @@
     <PreferredContainer secondary="toxcontainer" />
     <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="1" spawnprobability="0.0125" />
     <Price baseprice="650" sold="false"></Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="35" amount="2">
-      <RequiredSkill identifier="medical" level="35" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="antibloodloss1" mincondition="0.5" />
-      <RequiredItem identifier="stabilozine" amount="2" />
-      <RequiredItem identifier="scp_wastingdiseasesyringe" mincondition="0.5" />
-    </Fabricate>
     <Deconstruct time="20">
       <Item identifier="stabilozine" />
       <Item identifier="plastic" />
@@ -437,13 +404,6 @@
     <PreferredContainer secondary="toxcontainer" />
     <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="2" spawnprobability="0.01" />
     <Price baseprice="650" sold="false"></Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
-      <RequiredSkill identifier="medical" level="50" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="antibloodloss1" />
-      <RequiredItem identifier="sufforin" mincondition="0.5" />
-      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.25" />
-    </Fabricate>
     <Deconstruct time="20">
       <Item identifier="antibloodloss2" />
       <Item identifier="sulphuricacid" outcondition="0.5" />
@@ -509,11 +469,6 @@
       <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
       <Price storeidentifier="merchantarmory" multiplier="0.95" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
-      <RequiredSkill identifier="medical" level="75" />
-      <RequiredItem identifier="scp_replicatinglatex" />
-      <RequiredItem identifier="sufforin" amount="2" />
-    </Fabricate>
     <Deconstruct time="10">
       <Item identifier="sufforin" copycondition="true" />
     </Deconstruct>
