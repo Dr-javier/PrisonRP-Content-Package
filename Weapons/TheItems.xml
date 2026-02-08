@@ -214,20 +214,20 @@
       </Holdable>
       <Propulsion force="0">
         <RequiredItems items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
-        <StatusEffect type="OnUse" target="Contained" Condition="-1.0">
+        <StatusEffect type="OnUse" target="Contained" Condition="-4.0">
           <RequiredItem items="batterycell" type="Contained" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="Contained" Condition="-0.5">
+        <StatusEffect type="OnUse" target="Contained" Condition="-2.0">
           <RequiredItem items="fulguriumbatterycell" type="Contained" />
         </StatusEffect>
-        <StatusEffect type="OnUse" target="Contained" Condition="-1.0">
+        <StatusEffect type="OnUse" target="Contained" Condition="-5.0">
           <RequiredItem excludedidentifiers="batterycell,fulguriumbatterycell" type="Contained" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="NearbyCharacters" range="50">
-          <Affliction identifier="radiationsickness" amount="10" />
+          <Affliction identifier="radiationsickness" amount="25" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="Character">
-          <ReduceAffliction identifier="radiationsickness" amount="0.1" />
+          <ReduceAffliction identifier="radiationsickness" amount="-25" />
         </StatusEffect>
         <LightComponent LightColor="100,255,100,200" Flicker="0.5" range="10" powerconsumption="0">
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.4" size="4,4" />
@@ -252,7 +252,7 @@
       </ItemContainer>
     </Item>
 
-    
+
   
   <!--shotgun-->
   <Item name="Shorty Shotgun" identifier="arak_shortyshotgun" category="Weapon" subcategory="Firearms" cargocontaineridentifier="metalcrate" description="(12-GA) A small shotgun, favored by revolutionists and pirates alike." tags="smallitem,weapon,gun,provocativetohumanai,gunsmith,mountableweapon,shotgun" Scale="0.5" impactsoundtag="impact_metal_light">
